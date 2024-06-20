@@ -6,7 +6,7 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: Qual país vc acha a melhor cúlinaria?",
+        enunciado: "Qual país vc acha a melhor cúlinaria?",
         alternativas: [
             {
                 texto: "Ítalia",
