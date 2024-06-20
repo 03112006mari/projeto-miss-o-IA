@@ -10,19 +10,19 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Ítalia",
-                afirmacao: "Pizza"
+                afirmacao: "Comida tipica desse país é: Pizza"
             },
             {
                 texto: "Brasil",
-                afirmacao: "Feijoada"
+                afirmacao: "Comida tipica desse país é:Feijoada"
             },
             {
                  texto: "USA",
-                afirmacao: "Hamburguer"
+                afirmacao: "Comida tipica desse país é:Hamburguer"
             },
             {
                  texto: "França",
-                afirmacao: "Ratatouille"
+                afirmacao: "Comida tipica desse país é:Ratatouille"
             }
             
         ]
@@ -32,19 +32,19 @@ const perguntas = [
         alternativas: [
             {
                 texto: "salgado",
-                afirmacao: "salgado."
+                afirmacao: "Essa pessoa prefere salgado."
             },
             {
                 texto: "doce",
-                afirmacao: "doce."
+                afirmacao: "Essa pessoa prefere doce."
             },
             {
                texto: "azedo",
-                afirmacao: "doce"
+                afirmacao: "Essa pessoa prefere azedo"
             },
             {
                 texto: "amargo",
-                afirmacao: "amargo"  
+                afirmacao: "Essa pessoa prefere amargo"  
             }
         ]
     },
@@ -53,26 +53,27 @@ const perguntas = [
         alternativas: [
             {
                 texto: "italiana",
-                afirmacao: "italiana"
+                afirmacao: "A culinária italiana é conhecida por sua simplicidade e sabores autênticos, baseados em ingredientes frescos como massas artesanais, molhos de tomate e queijos aromáticos. Os italianos apreciam não apenas a comida, mas também o ato de compartilhar refeições longas e conviviais, que celebram a união e a alegria de estar juntos à mesa. Essa culinária é uma verdadeira embaixadora da cultura italiana, cativando paladares ao redor do mundo."
             },
             {
                 texto: "Brasileira",
-                afirmacao: " Brasileira. "
+                afirmacao: " A culinária brasileira é uma fusão vibrante de influências indígenas, africanas, europeias e asiáticas, destacando-se pela diversidade de ingredientes como açaí, mandioca, feijão-preto e frutos do mar. Pratos icônicos como a feijoada e técnicas variadas de preparo de frutos do mar exemplificam a rica tradição gastronômica do país, que celebra não apenas sabores, mas também a cultura e a festividade.
+. "
             },
             {
                 texto: "Asiatica",
-                afirmacao: "Asiatica" 
+                afirmacao: "A culinária asiática é famosa pela diversidade de sabores e técnicas culinárias que refletem a rica cultura do continente. Com ingredientes frescos como gengibre, soja e especiarias variadas, cada região oferece pratos únicos que equilibram sabores e texturas de maneira harmoniosa, proporcionando uma experiência gastronômica incomparável." 
             },
             {
                 texto: "Francesa",
-                afirmacao: "Francesa"
+                afirmacao: "A culinária francesa é famosa por sua sofisticação e técnica refinada, usando ingredientes frescos como manteiga, ervas, queijos e vinhos. Cada região da França contribui com pratos distintos, como boeuf bourguignon e ratatouille, além de sobremesas icônicas como macarons e crème brûlée, tornando-a uma das mais admiradas do mundo."
             }
         ]
     },
 ];
 let atual = 0;
 let perguntaAtual;
-let historiaFinal = "";
+let historiaFinal = "Obrigada por responder o Quizz ;)";
 
 function mostraPergunta() {
     if (atual >= perguntas.length) {
@@ -102,7 +103,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Obrigada por responder o Quizz ;)";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
