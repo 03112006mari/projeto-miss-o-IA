@@ -103,7 +103,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Obrigada por responder o Quizz ;)";
+    caixaPerguntas.textContent = "Obrigada por responder o Quizz ";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
